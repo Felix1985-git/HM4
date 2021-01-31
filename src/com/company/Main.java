@@ -24,5 +24,7 @@ public class Main {
         System.out.println(Rectangle3.isTheSameRectangle(Rectangle2));
         System.out.println();
         Rectangle.printRectangleCount();
+        System.out.println();
+        Rectangle.printClassName(true);
     }
 }

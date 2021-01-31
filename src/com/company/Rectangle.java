@@ -4,6 +4,8 @@ public class Rectangle {
     public double x;
     public double y;
     private static int createdRectangle;
+    private final static String RUSSIAN_CLASS_NAME = "Прямоугольник";
+    private final static String ENGLISH_CLASS_NAME = "Rectangle";
 
     public Rectangle(double x, double y) {
         this.x = x;
@@ -43,5 +45,13 @@ public class Rectangle {
 
     static void printRectangleCount() {
         System.out.println("Всего было создано " + Rectangle.createdRectangle + " прямоугольника");
+    }
+
+    static boolean printClassName(boolean printlnRussian) {
+        if (printlnRussian) {
+            System.out.println(RUSSIAN_CLASS_NAME);
+        } else System.out.println(ENGLISH_CLASS_NAME);
+
+        return printlnRussian;
     }
 }
