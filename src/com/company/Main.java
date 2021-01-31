@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 // Квадрат (x=y)
-        Rectangle Rectangle1 = new Rectangle(1.1, 1.1);
+        Rectangle Rectangle1 = new Rectangle(1.5);
         Rectangle1.printRectangleKind();
         Rectangle1.printArea();
         System.out.println(Rectangle1.isTheSameRectangle(Rectangle1));
